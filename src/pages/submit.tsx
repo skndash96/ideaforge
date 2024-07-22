@@ -7,7 +7,6 @@ import { categories } from "../lib/data";
 
 export default function SubmitIdea() {
     const [title, setTitle] = useState<string>("");
-    const [email, showEmail] = useState<boolean>(true);
 
     const [category, _setCategory] = useState<string | null>(null);
     const setCategory = (category: string | null) => _setCategory(category);
@@ -73,7 +72,7 @@ export default function SubmitIdea() {
                         setValue={setCategory}
                     />
                 </div>
-
+{/* 
                 <fieldset className="form-control w-fit flex-row items-center gap-4">
                     <label className="label label-text text-sm"> Show Email </label>
                     <input
@@ -82,7 +81,7 @@ export default function SubmitIdea() {
                         type="checkbox"
                         defaultChecked
                     />
-                </fieldset>
+                </fieldset> */}
 
                 <div>
                     <TagsInput
