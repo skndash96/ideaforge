@@ -28,9 +28,9 @@ export default function Header() {
     return (
         <header className="flex justify-between items-center">
             <div className="px-2 py-2">
-                <h1 className="flex gap-2 text-xl font-black">
+                <h1 className="flex items-center gap-2 text-xl font-black">
                     <BulbIcon />
-                    Ideaforge
+                    <span className="hidden sm:inline">Ideaforge</span>
                 </h1>
             </div>
 
